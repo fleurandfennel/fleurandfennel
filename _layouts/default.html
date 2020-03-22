@@ -9,7 +9,7 @@
     {%- include header.html -%}
 
     {%- if page.bannerImageUrl -%}
-        <img src="{{ page.bannerImageUrl }}" height="auto" width="auto" />
+        <img src="{{ page.bannerImageUrl | relative_url }}" height="auto" width="auto" />
     {%- endif -%}
 
     <main class="page-content" aria-label="Content">
