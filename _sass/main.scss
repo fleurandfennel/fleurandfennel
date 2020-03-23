@@ -6,6 +6,24 @@ body {
     letter-spacing: 0;
 }
 
+.banner-image-container {
+    position: relative;
+
+    img {
+        width: 100%;
+        filter: brightness(0.8);
+    }
+
+    .banner-image-label {
+        position: absolute;
+        top: 30%;
+        left: 11vw;
+        color: #fff;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+}
+
 .homepage {
     h1 {
         visibility: hidden;
@@ -42,6 +60,7 @@ body {
                 font-weight: bold;
                 margin-top: 10px;
                 text-align: center;
+                letter-spacing: 4px;
             }
         }
     }
