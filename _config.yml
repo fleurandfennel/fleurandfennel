@@ -21,7 +21,7 @@
 title: fleur + fennel
 email: fleurandfennel@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Sustainable gardens tailored to you
+  sustainable gardens tailored to you
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fleurandfennel.com" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: fleurandfennel
