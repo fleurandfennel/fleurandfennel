@@ -2,8 +2,19 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.site-title {
-    letter-spacing: 0;
+.site-header {
+    img {
+        height: 54px;
+        vertical-align: initial;
+    }
+
+    .site-title-container {
+        display: inline-block;
+    }
+
+    .site-title {
+        letter-spacing: 0;
+    }
 }
 
 .banner-image-container {
@@ -36,16 +47,23 @@ body {
 
     .services {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         padding-bottom: 40px;
 
-        @media (max-width: 599px) {
-            flex-direction: column;
-        }
-
         .service {
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 0 auto 16px auto;
+
+            @media (min-width: 600px) {
+                flex-direction: row;
+
+                .image-container {
+                    margin-right: 48px;
+                }
+            }
     
             img {
                 height: 100px;
@@ -57,6 +75,7 @@ body {
                 border-radius: 50%;
                 display: inline-block;
                 padding: 30px;
+                flex-shrink: 0;
             }
     
             .service-label {
@@ -65,6 +84,11 @@ body {
                 margin-top: 10px;
                 text-align: center;
                 letter-spacing: 4px;
+            }
+
+            p {
+                text-align: justify;
+                margin: 8px 12px;
             }
         }
     }
